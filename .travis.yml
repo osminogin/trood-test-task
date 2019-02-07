@@ -1,0 +1,16 @@
+language: python
+python:
+  - '3.6'
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+      sudo: true
+env:
+  - DEBUG=False
+  - DATABASE_URL=sqlite:///db.sqlite3
+install:
+  - 'pip install --upgrade pipenv'
+  - 'pipenv sync --dev'
+script:
+  - 'make test'
