@@ -7,8 +7,7 @@ matrix:
       dist: xenial
       sudo: true
 env:
-  - DEBUG=False
-  - DATABASE_URL=sqlite:///db.sqlite3
+  - DEBUG=False DATABASE_URL=sqlite:///db.sqlite3
 install:
   - 'pip install --upgrade pipenv'
   - 'pipenv sync --dev'
