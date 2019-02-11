@@ -5,9 +5,8 @@ import codecs
 from rest_framework import status
 from django.db.models import Q
 from rest_framework.mixins import ListModelMixin, CreateModelMixin
-from rest_framework.viewsets import GenericViewSet, ModelViewSet
+from rest_framework.viewsets import GenericViewSet
 from rest_framework.response import Response
-from drf_yasg.utils import swagger_auto_schema
 
 from .forms import UploadForm
 from .serializers import ActivitySerializer, UserSerializer
