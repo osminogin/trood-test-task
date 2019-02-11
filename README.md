@@ -4,11 +4,12 @@
 
 ## Features
 
+* Python 3.7 and 3.6 Support.
 * Uses asynchronous workers for non-blocking IO.
 * Automatically generated OpenAPI specs and documentation.
 * Full test coverage.
 * Load tests with Locust.
-* Travis CI support.
+* Continuous Integration with Travis CI.
 * With internationalization in mind.
 
 ## How to check
